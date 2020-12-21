@@ -7,9 +7,18 @@ public class Device {
     private String product;
     private String model;
     private String device;
-    private int transportId;
+    private Integer transportId;
 
     public Device() {
+    }
+
+    public Device(String address, String usb, String product, String model, String device, Integer transportId) {
+        this.address = address;
+        this.usb = usb;
+        this.product = product;
+        this.model = model;
+        this.device = device;
+        this.transportId = transportId;
     }
 
     public String getProduct() {
@@ -36,11 +45,11 @@ public class Device {
         this.device = device;
     }
 
-    public int getTransportId() {
+    public Integer getTransportId() {
         return transportId;
     }
 
-    public void setTransportId(int transportId) {
+    public void setTransportId(Integer transportId) {
         this.transportId = transportId;
     }
 
